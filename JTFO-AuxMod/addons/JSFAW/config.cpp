@@ -14,7 +14,9 @@ class CfgPatches
         {
             "JTFO_JSFAW_Helmet_Holiday",
             "JTFO_JSFAW_Helmet_Dimmy",
-            "JTFO_JSFAW_Helmet_Apathy"
+            "JTFO_JSFAW_Helmet_Thigpen",
+            "JTFO_JSFAW_Helmet_Apathy",
+            "JTFO_JSFAW_Helmet_Denis"
         };
     };
 };
@@ -50,6 +52,20 @@ class CfgWeapons
         };
     };
 
+    class JTFO_JSFAW_Helmet_Thigpen : rhsusf_hgu56p_visor
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        author = "Holiday & Dimmy";
+        displayName = "[JTFO] JSFAW Helmet (Thigpen)";
+        hiddenSelections[] = {"camo","patches"};
+        hiddenSelectionsTextures[] =
+        {
+            "\JSFAW\Data\Thigpen.paa",
+            ""
+        };
+    };
+
     class rhsusf_hgu56p_visor_mask_Empire_black;
     class JTFO_JSFAW_Helmet_Apathy : rhsusf_hgu56p_visor_mask_Empire_black
     {
@@ -61,6 +77,20 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
         {
             "\JSFAW\Data\Apathy.paa",
+            "\rhsusf\addons\rhsusf_infantry2\gear\head\hgu56\Data\rhs_hgu56_patches_empire_co.paa"
+        };
+    };
+
+    class JTFO_JSFAW_Helmet_Denis : rhsusf_hgu56p_visor_mask_Empire_black
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        author = "Holiday & Dimmy";
+        displayName = "[JTFO] JSFAW Helmet (Denis)";
+        hiddenSelections[] = {"camo","patches"};
+        hiddenSelectionsTextures[] =
+        {
+            "\JSFAW\Data\Denis.paa",
             "\rhsusf\addons\rhsusf_infantry2\gear\head\hgu56\Data\rhs_hgu56_patches_empire_co.paa"
         };
     };
