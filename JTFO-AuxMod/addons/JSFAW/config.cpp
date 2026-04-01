@@ -8,7 +8,8 @@ class CfgPatches
             "JTSFO_AH6M_C6",
             "JTSFO_AH6M_C7",
             "JTSFO_MH6M_C7",
-            "JTSFO_MH6M_C6"
+            "JTSFO_MH6M_C6",
+            "JTSFO_AD64D"
         };
         weapons[] =
         {
@@ -120,6 +121,7 @@ class CfgVehicles
 {
     class RHS_MELB_AH6M;
     class RHS_MELB_MH6M;
+    class RHS_AH64D;
 
     class JTSFO_AH6M_C6 : RHS_MELB_AH6M
     {
@@ -215,5 +217,38 @@ class CfgVehicles
             "\JSFAW\Data\Holiday_AH6.paa",
             "rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"
         };
+    };
+
+    class JTSFO_AD64D : RHS_AH64D
+    {
+        author = "Dimmy";
+        displayName = "AH-64 Apache";
+
+        scope = 2;
+        scopeCurator = 2;
+
+        side = 1;
+        faction = "JTSFO_NATO";
+        editorSubcategory = "JTSFO_NATO_AIR";
+
+        hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"",
+			"Pilot_MFD_L",
+			"Pilot_MFD_R",
+			"Gunner_MFD_L",
+			"Gunner_MFD_R"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\JSFAW\Data\AH_64D\AH64D_C67.paa",
+			"\rhsusf\addons\rhsusf_a2port_air2\ah1z\data\ah1z_engines_co.paa",
+			"#(argb,8,8,3)color(0,0,0,1.0,co)",
+			"#(argb,8,8,3)color(0,0,0,1.0,co)",
+			"#(argb,8,8,3)color(0,0,0,1.0,co)",
+			"#(argb,8,8,3)color(0,0,0,1.0,co)"
+		};
     };
 };
